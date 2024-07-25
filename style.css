@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: solid 3px black;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#calculator-body {
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(151, 151, 151) 3px;
+    background-color: rgb(46, 46, 46);
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;    
+}
+
+.display {
+    border: solid lightblue 3px;
+    background-color: lightblue;
+    height: 25px;
+    width: auto;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: right;
+}
