@@ -3,10 +3,12 @@ body {
     flex-direction: column;
     align-items: center;    
     padding: 60px;
+    background-color: rgb(41, 41, 41);
 }
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
 #calculator-body {
@@ -25,11 +27,12 @@ h1 {
     background-color: lightblue;
     height: 50px;
     width: auto;
-    padding: 10px;
+    padding: 10px 5px;
     margin: 10px 5px 5px 5px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 3em;
     text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .first-row, .second-row, .third-row, .fourth-row, .fifth-row {
@@ -38,7 +41,7 @@ h1 {
     height: 25%;
 }
 
-.zero, .num, .operator {
+.zero, .num, .operator, .clear {
     font-size: 3em;
 }
 
@@ -52,17 +55,38 @@ h1 {
 
 button {
     border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .clear {
     border: 2px rgb(92, 28, 28) solid;
     background-color: darkred;
-    font-size: 3em;
-    text-align: center;
-    color: white;
-    padding: 2px 0;
+    color: white;    
 }
+
+.operator {
+    border: 2px rgb(141, 81, 13) solid;
+    background-color: darkorange;
+    color: white;
+}
+
+.num, .zero {
+    border: 2px gray solid;
+    background-color: darkgrey;
+}
+
 .clear:active {
     background-color: rgb(92, 28, 28);
     color: grey;
+}
+
+.operator:active {
+    background-color: rgb(141, 81, 13);
+    color: grey;
+}
+
+.num:active, .zero:active {
+    background-color: gray;
+    color: white;
 }
