@@ -9,9 +9,12 @@ let prevNum = '';
 numbers.forEach(button => button.addEventListener('click', function(e) { 
     number(e.target.textContent);
     display.textContent = currNum;
+    
 }));
 
-
+operator.forEach(button => button.addEventListener('click', function(e) { 
+    operation(e.target.textContent);
+}));
 
 clear.addEventListener('click', () => {
     display.textContent = '0';
@@ -23,3 +26,10 @@ function number(num) {
     if (currNum.length < 10)
         currNum += num;
 }
+
+function operation(op){
+    console.log(op);
+    prevNum = currNum;
+    currNum = '';
+}
+
