@@ -33,6 +33,7 @@ h1 {
     font-size: 3em;
     text-align: right;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .first-row, .second-row, .third-row, .fourth-row, .fifth-row {
@@ -41,13 +42,15 @@ h1 {
     height: 25%;
 }
 
-.zero, .num, .operator, .clear {
+.clear, .zero {
+    width: 75% !important;
+}
+
+.num, .operator, .clear {
     font-size: 3em;
 }
 
-.clear, .zero {
-    width: 75%;
-}
+
 
 .num, .operator {
     width: 25%
@@ -71,7 +74,7 @@ button {
     color: white;
 }
 
-.num, .zero {
+.num {
     border: 2px gray solid;
     background-color: darkgrey;
 }
